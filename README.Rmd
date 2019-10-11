@@ -35,6 +35,6 @@ This is a version using [{golem}](https://github.com/ThinkR-open/golem) -- that'
 You can install the released version of gmappr from [github](https://github.com) with:
 
 ``` r
-devtools::install_github("discindo/gmappr")
+devtools::install_github("discindo/gmappr, build=FALSE")
 ```
-
+Note: `build=FALSE` is needed because https://github.com/r-lib/remotes/issues/262. 
