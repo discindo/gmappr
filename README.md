@@ -27,7 +27,7 @@ You can install the released version of gmappr from
 [github](https://github.com) with:
 
 ``` r
-devtools::install_github("discindo/gmappr, build=FALSE")
+devtools::install_github("discindo/gmappr", build=FALSE)
 ```
 
 Note: `build=FALSE` is needed because
