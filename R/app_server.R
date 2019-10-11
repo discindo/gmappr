@@ -1,10 +1,10 @@
 #' @import shiny
 
 #### Load the data
-map_joined_with_data <- readRDS("data/default-map.Rds")
-stat_reg <- readRDS("data/stat-reg.Rds")
-title_csv <-read_lines("data/sample_data.csv", n_max=1)
-example_data <- read_csv("data/sample_data.csv", skip = 1, col_types = "cn", col_names = c("locname", "values")) 
+map_joined_with_data <- readRDS("data-raw/default-map.Rds")
+stat_reg <- readRDS("data-raw/stat-reg.Rds")
+title_csv <- readr::read_lines("data-raw/sample_data.csv", n_max=1)
+example_data <- readr::read_csv("data-raw/sample_data.csv", skip = 1, col_types = "cn", col_names = c("locname", "values")) 
 
 
 app_server <- function(input, output,session) {
